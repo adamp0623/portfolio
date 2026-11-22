@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="346" viewBox="0 0 820 346" role="img" aria-labelledby="title desc">
+  <title id="title">Eddie-Node power architecture</title>
+  <desc id="desc">USB-C charging connects to a protected battery. The battery feeds a latch and separate regulators for the logic and servo. Battery voltage is measured by the microcontroller ADC.</desc>
+  <defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L9 4.5L0 9Z" fill="#476477"/></marker></defs>
+  <rect width="820" height="346" rx="16" fill="#f3f7fa"/>
+  <g font-family="system-ui, sans-serif" fill="#153647">
+    <text x="28" y="39" font-size="22" font-weight="700">Eddie-Node power architecture</text>
+    <text x="28" y="62" font-size="14">Functional overview</text>
+    <g fill="#fff" stroke="#a3b6c4" stroke-width="1.5">
+      <rect x="28" y="114" width="150" height="56" rx="8"/><rect x="211" y="114" width="162" height="56" rx="8"/>
+      <rect x="414" y="114" width="145" height="56" rx="8"/><rect x="630" y="82" width="162" height="57" rx="8"/>
+      <rect x="630" y="181" width="162" height="57" rx="8"/><rect x="211" y="239" width="162" height="56" rx="8"/>
+      <rect x="414" y="239" width="145" height="56" rx="8"/>
+    </g>
+    <g font-size="15" font-weight="600" text-anchor="middle">
+      <text x="103" y="137">USB-C charging<tspan x="103" dy="19" font-size="13" font-weight="400">External power input</tspan></text>
+      <text x="292" y="137">Single-cell LiPo<tspan x="292" dy="19" font-size="13" font-weight="400">Battery protection</tspan></text>
+      <text x="486" y="137">Latching switch<tspan x="486" dy="19" font-size="13" font-weight="400">Switched supply</tspan></text>
+      <text x="711" y="106">Logic DC/DC<tspan x="711" dy="19" font-size="13" font-weight="400">ESP32-H2 rail</tspan></text>
+      <text x="711" y="205">Servo DC/DC<tspan x="711" dy="19" font-size="13" font-weight="400">Servo rail</tspan></text>
+      <text x="292" y="262">Voltage sensing<tspan x="292" dy="19" font-size="13" font-weight="400">Battery monitor</tspan></text>
+      <text x="486" y="262">ESP32-H2 ADC<tspan x="486" dy="19" font-size="13" font-weight="400">Firmware telemetry</tspan></text>
+    </g>
+    <g fill="none" stroke="#476477" stroke-width="2" marker-end="url(#arrow)">
+      <path d="M178 142H208"/><path d="M373 142H411"/><path d="M559 142H595V111H627"/><path d="M559 142H595V210H627"/>
+      <path d="M292 170V236"/><path d="M373 267H411"/>
+    </g>
+  </g>
+</svg>

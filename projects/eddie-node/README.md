@@ -20,6 +20,8 @@ The ESP32-H2 and servo have different supply needs. I used separate DC/DC stages
 
 ![High-level diagram of battery charging, switched power, logic and servo rails, and battery voltage monitoring](media/power-overview.svg)
 
+![Power Distribution Schematic](media/power_distribution.pdf)
+
 ## Bench validation: battery voltage ADC
 
 This clip shows the assembled board on the bench, followed by the firmware logging raw ADC counts and a converted battery voltage. I used it as a functional check that the sensing path was operating and the firmware could report a voltage.
@@ -27,3 +29,15 @@ This clip shows the assembled board on the bench, followed by the firmware loggi
 [![Watch the ADC bench demo](media/battery-adc-preview.jpg)](media/battery-adc-demo.mp4)
 
 [Open the ADC bench demo (MP4)](media/battery-adc-demo.mp4)
+
+## Flight Testing: Successful Parachute Release
+
+After integration with the flight controller, we were successfully able to actuate the parachute release mechanism wirelessly with a radio link to the flight controller, communicating wirelessly with the node in the top of the fuselage. The below photo shows the rocket just after landing, with the parachute successfully deployed, and the node magnified in red.
+
+![Eddie Node Flight Test](media/Eddie-Node-Flight-Test.jpg)
+
+
+
+
+
+
